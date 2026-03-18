@@ -129,7 +129,7 @@
                     
                     <div class="property-card bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" data-price="120" data-area="5000" data-location="Sahaspur" data-type="plot" data-status="buy" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
                         <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" data-images='["https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600566753086-00f18efc204b?auto=format&fit=crop&w=800&q=80"]' data-index="0" alt="Villa" class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" onclick="switchPage('detail')">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" data-images='["https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600566753086-00f18efc204b?auto=format&fit=crop&w=800&q=80"]' data-index="0" alt="Villa" class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" onclick="viewPropertyDetails(this, event)">
                             
                             <div class="absolute top-3 left-3 flex gap-2 z-10">
                                 <span class="bg-gradient-to-r from-[#b38633] to-[#ebc673] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">VILLA</span>
@@ -154,7 +154,7 @@
                         </div>
                         
                         <div class="p-4 flex flex-col flex-grow">
-                            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Furnished Villa in Rajpur</h3>
+                            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="viewPropertyDetails(this, event)">Furnished Villa in Rajpur</h3>
                             <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Rajpur Road, Dehradun</p>
                             <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
                                 <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 4 Beds</span>
@@ -163,7 +163,7 @@
                             </div>
                             
                             <div class="mt-auto flex gap-2">
-                                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
+                                <button onclick="viewPropertyDetails(this, event)" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
                                     <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
                                 </button>
                                 <button class="w-9 h-9 border border-gray-200 dark:border-white/10 rounded-lg flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm"><i class="ph ph-calculator text-lg"></i></button>
@@ -173,7 +173,7 @@
 
                     <div class="property-card bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" data-price="85" data-area="1650" data-location="Jakhan" data-type="flat" data-status="buy" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
                         <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" data-images='["https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"]' data-index="0" alt="Apartment" class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" onclick="switchPage('detail')">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" data-images='["https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"]' data-index="0" alt="Apartment" class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" onclick="viewPropertyDetails(this, event)">
                             
                             <div class="absolute top-3 left-3 flex gap-2 z-10">
                                 <span class="bg-gradient-to-r from-[#b38633] to-[#ebc673] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">FLAT</span>
@@ -198,7 +198,7 @@
                         </div>
                         
                         <div class="p-4 flex flex-col flex-grow">
-                            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Premium 3BHK Apartment</h3>
+                            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="viewPropertyDetails(this, event)">Premium 3BHK Apartment</h3>
                             <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Jakhan, Dehradun</p>
                             <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
                                 <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 3 Beds</span>
@@ -207,7 +207,7 @@
                             </div>
                             
                             <div class="mt-auto flex gap-2">
-                                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
+                                <button onclick="viewPropertyDetails(this, event)" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
                                     <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
                                 </button>
                                 <button class="w-9 h-9 border border-gray-200 dark:border-white/10 rounded-lg flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm"><i class="ph ph-calculator text-lg"></i></button>
@@ -480,16 +480,16 @@
     <div class="bg-white rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.2)] border border-white/10 group hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-fit" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
         
         <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+            <img src="sangamvalley.jpeg" 
                  data-images='[
-                    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1600566753086-00f18efc204b?auto=format&fit=crop&w=800&q=80"
+                    "sangamvalley4.jpeg",
+                    "sangamvalley2.jpeg",
+                    "sangamvalley1.jpeg"
                  ]'
                  data-index="0"
                  alt="Villa" 
                  class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700 cursor-pointer" 
-                 onclick="switchPage('detail')">
+                 onclick="viewPropertyDetails(this, event)">
             
             <div class="absolute top-3 left-3 flex gap-2 z-10">
                 <span class="bg-gradient-to-r from-[#b38633] from-[0%] to-[#ebc673] to-[100%] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">Villa</span>
@@ -497,9 +497,7 @@
             </div>
 
             <div class="absolute top-3 right-3 flex gap-2 z-10">
-                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                    <i class="ph ph-heart text-sm"></i>
-                </button>
+                
                 <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
                     <i class="ph ph-share-network text-sm"></i>
                 </button>
@@ -518,24 +516,20 @@
                 <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
             </div>
 
-            <div class="absolute bottom-3 right-3 bg-[#1E3946]/90 backdrop-blur-md text-[#eecd75] font-serif font-bold px-3 py-1.5 rounded-lg shadow-lg text-xs border border-white/10 z-10">₹2.5 Cr</div>
         </div>
 
         <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 cursor-pointer hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Luxury Villa in Rajpur Road</h3>
+            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 cursor-pointer hover:text-[#DDAF3C] transition-colors leading-tight" onclick="viewPropertyDetails(this, event)">Sangam Valley</h3>
             <p class="text-gray-500 text-[11px] flex items-center gap-1 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Rajpur Road, Dehradun</p>
             <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
-                <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 4 Beds</span>
+                <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 3 Beds</span>
                 <span class="flex items-center gap-1"><i class="ph ph-bathtub text-base"></i> 3 Baths</span>
-                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 3200 sq.ft</span>
+                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 2600 sq.ft</span>
             </div>
             
             <div class="mt-auto flex gap-2">
-                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] hover:bg-[#162b35] transition-all shadow-md group">
+                <button onclick="viewPropertyDetails(this, event)" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] hover:bg-[#162b35] transition-all shadow-md group">
                     <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
-                </button>
-                <button class="w-9 h-9 border border-gray-200 rounded-lg flex items-center justify-center text-gray-500 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm">
-                    <i class="ph ph-calculator text-lg"></i>
                 </button>
             </div>
         </div>
@@ -544,16 +538,15 @@
     <div class="bg-white rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.2)] border border-white/10 group hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-fit" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
         
         <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" 
+            <img src="evara1.jpeg" 
                  data-images='[
-                    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+                    "evara2.jpeg",
+                    "evara1.jpeg"
                  ]'
                  data-index="0"
                  alt="Apartment" 
                  class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700 cursor-pointer" 
-                 onclick="switchPage('detail')">
+                 onclick="viewPropertyDetails(this, event)">
             
             <div class="absolute top-3 left-3 flex gap-2 z-10">
                 <span class="bg-gradient-to-r from-[#b38633] from-[0%] to-[#ebc673] to-[100%] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">Flat</span>
@@ -561,9 +554,6 @@
             </div>
 
             <div class="absolute top-3 right-3 flex gap-2 z-10">
-                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                    <i class="ph ph-heart text-sm"></i>
-                </button>
                 <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
                     <i class="ph ph-share-network text-sm"></i>
                 </button>
@@ -582,20 +572,19 @@
                 <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
             </div>
 
-            <div class="absolute bottom-3 right-3 bg-[#1E3946]/90 backdrop-blur-md text-[#eecd75] font-serif font-bold px-3 py-1.5 rounded-lg shadow-lg text-xs border border-white/10 z-10">₹85 Lacs</div>
         </div>
 
         <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 cursor-pointer hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Premium 3BHK Apartment</h3>
-            <p class="text-gray-500 text-[11px] flex items-center gap-1 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Jakhan, Dehradun</p>
+            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 cursor-pointer hover:text-[#DDAF3C] transition-colors leading-tight" onclick="viewPropertyDetails(this, event)">SVH Evara</h3>
+            <p class="text-gray-500 text-[11px] flex items-center gap-1 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Rajpur Road, Dehradun</p>
             <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
                 <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 3 Beds</span>
-                <span class="flex items-center gap-1"><i class="ph ph-bathtub text-base"></i> 2 Baths</span>
-                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 1650 sq.ft</span>
+                <span class="flex items-center gap-1"><i class="ph ph-bathtub text-base"></i> 3 Baths</span>
+                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 2600 sq.ft</span>
             </div>
             
             <div class="mt-auto flex gap-2">
-                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] hover:bg-[#162b35] transition-all shadow-md group">
+                <button onclick="viewPropertyDetails(this, event)" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] hover:bg-[#162b35] transition-all shadow-md group">
                     <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
                 </button>
                 <button class="w-9 h-9 border border-gray-200 rounded-lg flex items-center justify-center text-gray-500 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm">
@@ -605,67 +594,6 @@
         </div>
     </div>
 
-    <div class="bg-white rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.2)] border border-white/10 group hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-fit" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
-        
-        <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
-                 data-images='[
-                    "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1629196914205-d98c25db8059?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb65?auto=format&fit=crop&w=800&q=80"
-                 ]'
-                 data-index="0"
-                 alt="Plot" 
-                 class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700 cursor-pointer" 
-                 onclick="switchPage('detail')">
-            
-            <div class="absolute top-3 left-3 flex gap-2 z-10">
-                <span class="bg-gradient-to-r from-[#b38633] from-[0%] to-[#ebc673] to-[100%] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">Plot</span>
-                <span class="bg-[#132026]/70 text-white text-[9px] font-bold px-2.5 py-1 rounded-full backdrop-blur-md shadow-md tracking-wider uppercase">Buy</span>
-            </div>
-
-            <div class="absolute top-3 right-3 flex gap-2 z-10">
-                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                    <i class="ph ph-heart text-sm"></i>
-                </button>
-                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                    <i class="ph ph-share-network text-sm"></i>
-                </button>
-            </div>
-
-            <button onclick="changeImage(this, 'prev', event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                <i class="ph ph-caret-left text-sm"></i>
-            </button>
-            <button onclick="changeImage(this, 'next', event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                <i class="ph ph-caret-right text-sm"></i>
-            </button>
-
-            <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
-                <div class="w-1.5 h-1.5 rounded-full bg-[#DDAF3C] shadow-sm transition-colors duration-300"></div>
-                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-            </div>
-
-            <div class="absolute bottom-3 right-3 bg-[#1E3946]/90 backdrop-blur-md text-[#eecd75] font-serif font-bold px-3 py-1.5 rounded-lg shadow-lg text-xs border border-white/10 z-10">₹1.2 Cr</div>
-        </div>
-
-        <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 cursor-pointer hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Farmhouse Plot with View</h3>
-            <p class="text-gray-500 text-[11px] flex items-center gap-1 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Sahaspur, Dehradun</p>
-            <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
-                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 5000 sq.yd</span>
-            </div>
-            
-            <div class="mt-auto flex gap-2">
-                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] hover:bg-[#162b35] transition-all shadow-md group">
-                    <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
-                </button>
-                <button class="w-9 h-9 border border-gray-200 rounded-lg flex items-center justify-center text-gray-500 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm">
-                    <i class="ph ph-calculator text-lg"></i>
-                </button>
-            </div>
-        </div>
-    </div>
 
 </div>
                     <div class="flex justify-center mt-4">
@@ -873,25 +801,23 @@
     <div class="property-card bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" data-price="250" data-area="3200" data-location="Rajpur Road" data-type="villa" data-status="buy" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
         
         <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+            <img src="sangamvalley.jpeg" 
                  data-images='[
-                    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1600566753086-00f18efc204b?auto=format&fit=crop&w=800&q=80"
+                    "sangamvalley4.jpeg",
+                    "sangamvalley2.jpeg",
+                    "sangamvalley1.jpeg"
                  ]'
                  data-index="0"
                  alt="Villa" 
                  class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" 
-                 onclick="switchPage('detail')">
+                 onclick="viewPropertyDetails(this, event)">
             
             <div class="absolute top-3 left-3 flex gap-2 z-10">
                 <span class="bg-gradient-to-r from-[#b38633] to-[#ebc673] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">VILLA</span>
             </div>
 
             <div class="absolute top-3 right-3 flex gap-2 z-10">
-                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                    <i class="ph ph-heart text-sm"></i>
-                </button>
+                
                 <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
                     <i class="ph ph-share-network text-sm"></i>
                 </button>
@@ -914,11 +840,17 @@
         </div>
         
         <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Luxury Villa</h3>
+            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="viewPropertyDetails(this, event)">Luxury Villa</h3>
             <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Rajpur Road</p>
             
+            <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
+                <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 4 Beds</span>
+                <span class="flex items-center gap-1"><i class="ph ph-bathtub text-base"></i> 3 Baths</span>
+                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 3200 sq.ft</span>
+            </div>
+            
             <div class="mt-auto flex gap-2">
-                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
+                <button onclick="viewPropertyDetails(this, event)" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
                     <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
                     <i class="ph ph-arrow-right text-[#DDAF3C] group-hover:translate-x-1 transition-transform text-xs"></i>
                 </button>
@@ -929,29 +861,26 @@
         </div>
     </div>
 
-    <!-- ADDED MISSING CLASS AND DATA ATTRIBUTES TO CARD 2 -->
-    <div class="property-card bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" data-price="85" data-area="1650" data-location="Jakhan" data-type="flat" data-status="buy" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
+    <!-- ADDED MISSING CLASS AND DATA ATTRIBUTES TO CARD 3 (EVARA) -->
+    <div class="property-card bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" data-price="85" data-area="2600" data-location="Rajpur Road" data-type="flat" data-status="buy" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
         
         <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" 
+            <img src="evara1.jpeg" 
                  data-images='[
-                    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+                    "evara2.jpeg",
+                    "evara1.jpeg"
                  ]'
                  data-index="0"
                  alt="Apartment" 
                  class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" 
-                 onclick="switchPage('detail')">
+                 onclick="viewPropertyDetails(this, event)">
             
             <div class="absolute top-3 left-3 flex gap-2 z-10">
                 <span class="bg-gradient-to-r from-[#b38633] to-[#ebc673] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">FLAT</span>
             </div>
 
             <div class="absolute top-3 right-3 flex gap-2 z-10">
-                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                    <i class="ph ph-heart text-sm"></i>
-                </button>
+                
                 <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
                     <i class="ph ph-share-network text-sm"></i>
                 </button>
@@ -974,11 +903,17 @@
         </div>
         
         <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Premium 3BHK Apartment</h3>
-            <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Jakhan</p>
+            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="viewPropertyDetails(this, event)"> SVH Evara</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Rajpur Road, Dehradun</p>
+            
+            <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
+                <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 3 Beds</span>
+                <span class="flex items-center gap-1"><i class="ph ph-bathtub text-base"></i> 3 Baths</span>
+                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 2600 sq.ft</span>
+            </div>
             
             <div class="mt-auto flex gap-2">
-                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
+                <button onclick="viewPropertyDetails(this, event)" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
                     <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
                     <i class="ph ph-arrow-right text-[#DDAF3C] group-hover:translate-x-1 transition-transform text-xs"></i>
                 </button>
@@ -989,274 +924,8 @@
         </div>
     </div>
 
-    <!-- ADDED MISSING CLASS AND DATA ATTRIBUTES TO CARD 3 -->
-    <div class="property-card bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" data-price="120" data-area="5000" data-location="Sahaspur" data-type="plot" data-status="buy" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
-        
-        <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
-                 data-images='[
-                    "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1629196914205-d98c25db8059?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb65?auto=format&fit=crop&w=800&q=80"
-                 ]'
-                 data-index="0"
-                 alt="Plot" 
-                 class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" 
-                 onclick="switchPage('detail')">
-            
-            <div class="absolute top-3 left-3 flex gap-2 z-10">
-                <span class="bg-gradient-to-r from-[#b38633] to-[#ebc673] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">PLOT</span>
-            </div>
-
-            <div class="absolute top-3 right-3 flex gap-2 z-10">
-                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                    <i class="ph ph-heart text-sm"></i>
-                </button>
-                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                    <i class="ph ph-share-network text-sm"></i>
-                </button>
-            </div>
-
-            <button onclick="changeImage(this, 'prev', event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                <i class="ph ph-caret-left text-sm"></i>
-            </button>
-            <button onclick="changeImage(this, 'next', event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                <i class="ph ph-caret-right text-sm"></i>
-            </button>
-
-            <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
-                <div class="w-1.5 h-1.5 rounded-full bg-[#DDAF3C] shadow-sm transition-colors duration-300"></div>
-                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-            </div>
-
-            <div class="absolute bottom-3 right-3 bg-[#132026]/80 backdrop-blur-md text-[#eecd75] font-serif font-bold px-3 py-1 rounded-lg text-xs shadow-md border border-white/10 z-10">₹1.2 Cr</div>
-        </div>
-        
-        <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Farmhouse Plot</h3>
-            <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Sahaspur</p>
-            
-            <div class="mt-auto flex gap-2">
-                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
-                    <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
-                    <i class="ph ph-arrow-right text-[#DDAF3C] group-hover:translate-x-1 transition-transform text-xs"></i>
-                </button>
-                <button class="w-9 h-9 border border-gray-200 dark:border-white/10 rounded-lg flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm">
-                    <i class="ph ph-calculator text-lg"></i>
-                </button>
-            </div>
-        </div>
-    </div>
 
 </div>
-                </div>
-            </div>
-        </main>
-
-        <main id="view-buy" class="view-section flex-grow pt-28 pb-20 hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <div class="mb-12 border-b border-gray-200 dark:border-white/10 pb-8">
-                    <p class="text-brand-gold text-[11px] font-bold tracking-[0.25em] uppercase mb-3">Buy Property</p>
-                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-slate-800 dark:text-white mb-4">Find Your <span class="text-brand-gold">Dream Home</span></h1>
-                    <p class="text-gray-500 dark:text-gray-400 max-w-2xl text-sm leading-relaxed">
-                        Browse premium properties available for purchase in Dehradun. From luxury villas to affordable apartments.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left mb-12">
-                    
-                    <div class="bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
-                        
-                        <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
-                                 data-images='[
-                                    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
-                                    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
-                                    "https://images.unsplash.com/photo-1600566753086-00f18efc204b?auto=format&fit=crop&w=800&q=80"
-                                 ]'
-                                 data-index="0"
-                                 alt="Villa" 
-                                 class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" 
-                                 onclick="switchPage('detail')">
-                            
-                            <div class="absolute top-3 left-3 flex gap-2 z-10">
-                                <span class="bg-gradient-to-r from-[#b38633] to-[#ebc673] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">VILLA</span>
-                                <span class="bg-[#132026]/80 text-white text-[9px] font-bold px-2.5 py-1 rounded-full backdrop-blur-md shadow-md tracking-wider uppercase">Buy</span>
-                            </div>
-
-                            <div class="absolute top-3 right-3 flex gap-2 z-10">
-                                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                                    <i class="ph ph-heart text-sm"></i>
-                                </button>
-                                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                                    <i class="ph ph-share-network text-sm"></i>
-                                </button>
-                            </div>
-
-                            <button onclick="changeImage(this, 'prev', event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                                <i class="ph ph-caret-left text-sm"></i>
-                            </button>
-                            <button onclick="changeImage(this, 'next', event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                                <i class="ph ph-caret-right text-sm"></i>
-                            </button>
-
-                            <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#DDAF3C] shadow-sm transition-colors duration-300"></div>
-                                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-                                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-                            </div>
-
-                            <div class="absolute bottom-3 right-3 bg-[#132026]/80 backdrop-blur-md text-[#eecd75] font-serif font-bold px-3 py-1 rounded-lg text-xs shadow-md border border-white/10 z-10">₹2.5 Cr</div>
-                        </div>
-                        
-                        <div class="p-4 flex flex-col flex-grow">
-                            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Luxury Villa in Rajpur Road</h3>
-                            <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Rajpur Road, Dehradun</p>
-                            <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
-                                <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 4 Beds</span>
-                                <span class="flex items-center gap-1"><i class="ph ph-bathtub text-base"></i> 3 Baths</span>
-                                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 3200 sq.ft</span>
-                            </div>
-                            
-                            <div class="mt-auto flex gap-2">
-                                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
-                                    <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
-                                </button>
-                                <button class="w-9 h-9 border border-gray-200 dark:border-white/10 rounded-lg flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm">
-                                    <i class="ph ph-calculator text-lg"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
-                        
-                        <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" 
-                                 data-images='[
-                                    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-                                    "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80",
-                                    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
-                                 ]'
-                                 data-index="0"
-                                 alt="Apartment" 
-                                 class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" 
-                                 onclick="switchPage('detail')">
-                            
-                            <div class="absolute top-3 left-3 flex gap-2 z-10">
-                                <span class="bg-gradient-to-r from-[#b38633] to-[#ebc673] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">FLAT</span>
-                                <span class="bg-[#132026]/80 text-white text-[9px] font-bold px-2.5 py-1 rounded-full backdrop-blur-md shadow-md tracking-wider uppercase">Buy</span>
-                            </div>
-
-                            <div class="absolute top-3 right-3 flex gap-2 z-10">
-                                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                                    <i class="ph ph-heart text-sm"></i>
-                                </button>
-                                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                                    <i class="ph ph-share-network text-sm"></i>
-                                </button>
-                            </div>
-
-                            <button onclick="changeImage(this, 'prev', event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                                <i class="ph ph-caret-left text-sm"></i>
-                            </button>
-                            <button onclick="changeImage(this, 'next', event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                                <i class="ph ph-caret-right text-sm"></i>
-                            </button>
-
-                            <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#DDAF3C] shadow-sm transition-colors duration-300"></div>
-                                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-                                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-                            </div>
-
-                            <div class="absolute bottom-3 right-3 bg-[#132026]/80 backdrop-blur-md text-[#eecd75] font-serif font-bold px-3 py-1 rounded-lg text-xs shadow-md border border-white/10 z-10">₹85 Lacs</div>
-                        </div>
-                        
-                        <div class="p-4 flex flex-col flex-grow">
-                            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Premium 3BHK Apartment</h3>
-                            <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Jakhan, Dehradun</p>
-                            <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
-                                <span class="flex items-center gap-1"><i class="ph ph-bed text-base"></i> 3 Beds</span>
-                                <span class="flex items-center gap-1"><i class="ph ph-bathtub text-base"></i> 2 Baths</span>
-                                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 1650 sq.ft</span>
-                            </div>
-                            
-                            <div class="mt-auto flex gap-2">
-                                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
-                                    <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
-                                </button>
-                                <button class="w-9 h-9 border border-gray-200 dark:border-white/10 rounded-lg flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm">
-                                    <i class="ph ph-calculator text-lg"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white dark:bg-brand-bgLight rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-white/10 group cursor-pointer transition-all duration-300 hover:-translate-y-1 h-fit flex flex-col" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
-                        
-                        <div class="relative h-48 overflow-hidden shrink-0 group/image rounded-t-2xl transform-gpu">
-                            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
-                                 data-images='[
-                                    "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
-                                    "https://images.unsplash.com/photo-1629196914205-d98c25db8059?auto=format&fit=crop&w=800&q=80",
-                                    "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb65?auto=format&fit=crop&w=800&q=80"
-                                 ]'
-                                 data-index="0"
-                                 alt="Plot" 
-                                 class="carousel-img w-full h-full object-cover rounded-t-2xl group-hover/image:scale-110 transition-transform duration-700" 
-                                 onclick="switchPage('detail')">
-                            
-                            <div class="absolute top-3 left-3 flex gap-2 z-10">
-                                <span class="bg-gradient-to-r from-[#b38633] to-[#ebc673] text-[#132026] text-[9px] font-bold px-2.5 py-1 rounded-full shadow-md tracking-wider uppercase">PLOT</span>
-                                <span class="bg-[#132026]/80 text-white text-[9px] font-bold px-2.5 py-1 rounded-full backdrop-blur-md shadow-md tracking-wider uppercase">Buy</span>
-                            </div>
-
-                            <div class="absolute top-3 right-3 flex gap-2 z-10">
-                                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-[#eecd75] hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                                    <i class="ph ph-heart text-sm"></i>
-                                </button>
-                                <button class="w-8 h-8 rounded-full bg-[#132026]/70 backdrop-blur-md flex items-center justify-center text-white hover:bg-[#DDAF3C] hover:text-[#132026] transition-colors shadow-md">
-                                    <i class="ph ph-share-network text-sm"></i>
-                                </button>
-                            </div>
-
-                            <button onclick="changeImage(this, 'prev', event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                                <i class="ph ph-caret-left text-sm"></i>
-                            </button>
-                            <button onclick="changeImage(this, 'next', event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#132026]/70 text-white flex items-center justify-center opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm shadow-md hover:bg-[#DDAF3C] hover:text-[#132026] z-20">
-                                <i class="ph ph-caret-right text-sm"></i>
-                            </button>
-
-                            <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
-                                <div class="w-1.5 h-1.5 rounded-full bg-[#DDAF3C] shadow-sm transition-colors duration-300"></div>
-                                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-                                <div class="w-1.5 h-1.5 rounded-full bg-white/60 shadow-sm transition-colors duration-300"></div>
-                            </div>
-
-                            <div class="absolute bottom-3 right-3 bg-[#132026]/80 backdrop-blur-md text-[#eecd75] font-serif font-bold px-3 py-1 rounded-lg text-xs shadow-md border border-white/10 z-10">₹1.2 Cr</div>
-                        </div>
-                        
-                        <div class="p-4 flex flex-col flex-grow">
-                            <h3 class="text-lg font-serif font-bold mb-1 text-slate-900 dark:text-white group-hover:text-[#DDAF3C] transition-colors leading-tight" onclick="switchPage('detail')">Farmhouse Plot with Mountain View</h3>
-                            <p class="text-gray-500 dark:text-gray-400 text-[11px] flex items-center gap-1.5 mb-3"><i class="ph ph-map-pin text-[#DDAF3C]"></i> Sahaspur, Dehradun</p>
-                            <div class="flex justify-between items-center text-[11px] text-gray-500 border-t border-gray-100 pt-3 mb-4">
-                                <span class="flex items-center gap-1"><i class="ph ph-corners-out text-base"></i> 5000 sq.yd</span>
-                            </div>
-                            
-                            <div class="mt-auto flex gap-2">
-                                <button onclick="switchPage('detail')" class="flex-1 bg-[#1E3946] border border-[#1E3946] rounded-lg py-2 flex items-center justify-center gap-2 hover:border-[#DDAF3C] transition-all shadow-md group">
-                                    <span class="font-bold text-[#DDAF3C] tracking-wide text-xs">View Details</span>
-                                </button>
-                                <button class="w-9 h-9 border border-gray-200 dark:border-white/10 rounded-lg flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-[#DDAF3C] hover:border-[#DDAF3C] transition-colors shadow-sm">
-                                    <i class="ph ph-calculator text-lg"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </main>
@@ -1272,11 +941,11 @@
                     <div class="w-full lg:w-3/5">
     <div class="relative h-[400px] md:h-[480px] rounded-2xl overflow-hidden mb-4 shadow-md group">
         
-        <img id="detail-main-img" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Main Property" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+        <img id="detail-main-img" src="sangamvalley.jpeg" alt="Main Property" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
         
         <div class="absolute top-4 left-4 flex gap-2 z-10">
-            <span class="bg-brand-gold text-brand-bg text-xs font-bold px-4 py-1.5 rounded-full shadow-sm tracking-wide uppercase">VILLA</span>
-            <span class="bg-brand-bg/80 text-white text-xs font-bold px-4 py-1.5 rounded-full backdrop-blur-sm shadow-sm tracking-wide uppercase">Buy</span>
+            <span id="detail-badge-type" class="bg-brand-gold text-brand-bg text-xs font-bold px-4 py-1.5 rounded-full shadow-sm tracking-wide uppercase">VILLA</span>
+            <span id="detail-badge-status" class="bg-brand-bg/80 text-white text-xs font-bold px-4 py-1.5 rounded-full backdrop-blur-sm shadow-sm tracking-wide uppercase">Buy</span>
         </div>
         
         <button onclick="changeDetailImage('prev')" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-brand-bg/60 text-white flex items-center justify-center hover:bg-brand-gold hover:text-brand-bg transition backdrop-blur-sm shadow-md opacity-0 group-hover:opacity-100 z-10">
@@ -1287,38 +956,34 @@
         </button>
     </div>
     
-    <div class="flex gap-4 overflow-x-auto pb-2 custom-scrollbar">
-        <img onclick="changeDetailImage(0)" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" class="detail-thumb w-20 h-20 rounded-lg object-cover cursor-pointer border-2 border-brand-gold shadow-sm transition-all">
-        
-        <img onclick="changeDetailImage(1)" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" class="detail-thumb w-20 h-20 rounded-lg object-cover cursor-pointer border-2 border-transparent hover:border-brand-gold/50 opacity-50 hover:opacity-100 shadow-sm transition-all">
-        
-        <img onclick="changeDetailImage(2)" src="https://images.unsplash.com/photo-1600566753086-00f18efc204b?auto=format&fit=crop&w=800&q=80" class="detail-thumb w-20 h-20 rounded-lg object-cover cursor-pointer border-2 border-transparent hover:border-brand-gold/50 opacity-50 hover:opacity-100 shadow-sm transition-all">
+    <div id="detail-thumbnails" class="flex gap-4 overflow-x-auto pb-2 custom-scrollbar">
+        <!-- Thumbnails will be injected here via JS -->
     </div>
 </div>
 
                     <div class="w-full lg:w-2/5">
-                        <h1 class="text-3xl font-serif font-bold text-slate-900 dark:text-white mb-2">Luxury Villa in Rajpur Road</h1>
-                        <p class="text-gray-500 dark:text-gray-400 flex items-center gap-1.5 mb-6 text-sm"><i class="ph ph-map-pin"></i> Rajpur Road, Dehradun</p>
+                        <h1 id="detail-title" class="text-3xl font-serif font-bold text-slate-900 dark:text-white mb-2">Luxury Villa in Rajpur Road</h1>
+                        <p class="text-gray-500 dark:text-gray-400 flex items-center gap-1.5 mb-6 text-sm"><i class="ph ph-map-pin"></i> <span id="detail-location-text">Rajpur Road, Dehradun</span></p>
 
                         <div class="bg-white dark:bg-brand-bgLight p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-white/10 mb-6">
-                            <h2 class="text-4xl font-serif font-bold text-brand-gold mb-1">₹2.5 Cr</h2>
+                            <h2 id="detail-price" class="text-4xl font-serif font-bold text-brand-gold mb-1">₹2.5 Cr</h2>
                             <p class="text-sm text-gray-500 dark:text-gray-400">EMI from ₹1,85,000/mo</p>
                         </div>
 
                         <div class="grid grid-cols-3 gap-4 mb-6 text-center">
                             <div class="bg-white dark:bg-brand-bgLight p-4 rounded-2xl border border-gray-200 dark:border-white/10 shadow-sm">
                                 <i class="ph ph-bed text-brand-gold text-2xl mb-1.5 inline-block"></i>
-                                <p class="font-bold text-slate-900 dark:text-white text-lg leading-tight">4</p>
+                                <p id="detail-beds" class="font-bold text-slate-900 dark:text-white text-lg leading-tight">4</p>
                                 <p class="text-[10px] uppercase tracking-wide text-gray-500 mt-0.5">Bedrooms</p>
                             </div>
                             <div class="bg-white dark:bg-brand-bgLight p-4 rounded-2xl border border-gray-200 dark:border-white/10 shadow-sm">
                                 <i class="ph ph-bathtub text-brand-gold text-2xl mb-1.5 inline-block"></i>
-                                <p class="font-bold text-slate-900 dark:text-white text-lg leading-tight">3</p>
+                                <p id="detail-baths" class="font-bold text-slate-900 dark:text-white text-lg leading-tight">3</p>
                                 <p class="text-[10px] uppercase tracking-wide text-gray-500 mt-0.5">Bathrooms</p>
                             </div>
                             <div class="bg-white dark:bg-brand-bgLight p-4 rounded-2xl border border-gray-200 dark:border-white/10 shadow-sm">
                                 <i class="ph ph-corners-out text-brand-gold text-2xl mb-1.5 inline-block"></i>
-                                <p class="font-bold text-slate-900 dark:text-white text-lg leading-tight">3200</p>
+                                <p id="detail-area" class="font-bold text-slate-900 dark:text-white text-lg leading-tight">3200</p>
                                 <p class="text-[10px] uppercase tracking-wide text-gray-500 mt-0.5">sq.ft Area</p>
                             </div>
                         </div>
@@ -1335,7 +1000,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 border-t border-gray-200 dark:border-white/10 pt-12">
                     <div>
                         <h3 class="text-2xl font-serif font-bold text-slate-900 dark:text-white mb-4">Description</h3>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                        <p id="detail-description" class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
                             A stunning luxury villa situated on the prestigious Rajpur Road. This property features 4 spacious bedrooms, a private garden, a swimming pool, and modern amenities throughout. Perfect for families seeking a premium lifestyle in Dehradun.
                         </p>
                     </div>
@@ -1701,25 +1366,128 @@ if (sellForm) {
             }, 300); // 300ms matches the Tailwind duration-300 class
         }
 
+        // --- NEW DETAIL INJECTION FUNCTION ---
+        let detailImages = [];
+        let currentDetailIndex = 0;
+
+        function viewPropertyDetails(element, event) {
+            if(event) event.stopPropagation();
+            
+            // Find the parent card to scrape data from (handle both .property-card and home page cards)
+            const card = element.closest('.group\\/image')?.parentElement || element.closest('.property-card') || element.closest('.bg-white.rounded-2xl');
+            if (!card) return;
+
+            // Extract Data
+            const titleEl = card.querySelector('h3');
+            const title = titleEl ? titleEl.innerText : 'Property Details';
+            
+            const locationEl = card.querySelector('p'); // Grabs the first paragraph containing the location
+            const location = locationEl ? locationEl.innerText.replace(' Rajpur Road, Dehradun', 'Rajpur Road, Dehradun').trim() : 'Dehradun';
+            
+            const priceBadge = card.querySelector('.absolute.bottom-3.right-3');
+            const price = priceBadge ? priceBadge.innerText : 'Price on Request';
+
+            // Extract Beds, Baths, Area
+            const statsRow = card.querySelector('.border-t.border-gray-100');
+            let beds = '-', baths = '-', area = '-';
+            if (statsRow) {
+                const spans = statsRow.querySelectorAll('span');
+                spans.forEach(span => {
+                    if(span.innerText.includes('Bed')) beds = span.innerText.replace('Beds', '').trim();
+                    if(span.innerText.includes('Bath')) baths = span.innerText.replace('Baths', '').trim();
+                    if(span.innerText.includes('sq.ft')) area = span.innerText.replace('sq.ft', '').trim();
+                });
+            }
+
+            // Extract Status and Type badges
+            const badgesContainer = card.querySelector('.absolute.top-3.left-3');
+            let type = 'PROPERTY', status = 'BUY';
+            if (badgesContainer) {
+                const spans = badgesContainer.querySelectorAll('span');
+                if(spans.length >= 1) type = spans[0].innerText;
+                if(spans.length >= 2) status = spans[1].innerText;
+            }
+
+            // Extract Image Array
+            const mainImgEl = card.querySelector('.carousel-img');
+            let images = [];
+            if (mainImgEl && mainImgEl.hasAttribute('data-images')) {
+                images = JSON.parse(mainImgEl.getAttribute('data-images'));
+            } else if (mainImgEl) {
+                images = [mainImgEl.src];
+            } else {
+                images = ['sangamvalley.jpeg'];
+            }
+
+            // --- Inject Data into the Detail Page ---
+            document.getElementById('detail-title').innerText = title;
+            document.getElementById('detail-location-text').innerText = location.replace(/Rajpur Road, Dehradun Dehradun/g, 'Rajpur Road, Dehradun');
+            document.getElementById('detail-price').innerText = price;
+            document.getElementById('detail-beds').innerText = beds;
+            document.getElementById('detail-baths').innerText = baths;
+            document.getElementById('detail-area').innerText = area;
+            document.getElementById('detail-badge-type').innerText = type.toUpperCase();
+            document.getElementById('detail-badge-status').innerText = status;
+            document.getElementById('detail-description').innerText = `A stunning ${type.toLowerCase()} situated in ${location}. ${title} features ${beds} spacious bedrooms, ${baths} bathrooms, and modern amenities throughout. Perfect for families seeking a premium lifestyle in Dehradun.`;
+
+            // Setup Image Slider Array
+            detailImages = images; 
+            currentDetailIndex = 0;
+            document.getElementById('detail-main-img').src = detailImages[0];
+
+            // Rebuild Thumbnails
+            const thumbContainer = document.getElementById('detail-thumbnails');
+            if (thumbContainer) {
+                thumbContainer.innerHTML = '';
+                detailImages.forEach((imgSrc, index) => {
+                    const activeClass = index === 0 ? 'border-brand-gold' : 'border-transparent opacity-50';
+                    const imgHTML = `<img onclick="changeDetailImage(${index})" src="${imgSrc}" class="detail-thumb w-20 h-20 rounded-lg object-cover cursor-pointer border-2 hover:border-brand-gold/50 hover:opacity-100 shadow-sm transition-all ${activeClass}">`;
+                    thumbContainer.innerHTML += imgHTML;
+                });
+            }
+
+            // Switch the View
+            switchPage('detail');
+        }
+
+        function changeDetailImage(action) {
+            if (action === 'prev') {
+                currentDetailIndex = (currentDetailIndex - 1 + detailImages.length) % detailImages.length;
+            } else if (action === 'next') {
+                currentDetailIndex = (currentDetailIndex + 1) % detailImages.length;
+            } else if (typeof action === 'number') {
+                currentDetailIndex = action; 
+            }
+
+            document.getElementById('detail-main-img').src = detailImages[currentDetailIndex];
+
+            const thumbs = document.querySelectorAll('.detail-thumb');
+            thumbs.forEach((thumb, index) => {
+                if (index === currentDetailIndex) {
+                    thumb.classList.add('border-brand-gold');
+                    thumb.classList.remove('border-transparent', 'opacity-50');
+                } else {
+                    thumb.classList.remove('border-brand-gold');
+                    thumb.classList.add('border-transparent', 'opacity-50');
+                }
+            });
+        }
+
         function switchPage(pageId, isInitialLoad = false) {
-            // Save the current page to the browser's memory
             localStorage.setItem('currentPage', pageId);
 
-            // 1. Hide all views
             const views = document.querySelectorAll('.view-section');
             views.forEach(view => {
                 view.classList.add('hidden');
                 view.classList.remove('block');
             });
 
-            // 2. Show target view
             const targetView = document.getElementById('view-' + pageId);
             if(targetView) {
                 targetView.classList.remove('hidden');
                 targetView.classList.add('block');
             }
 
-            // 3. Update Navbar Colors
             const navBtns = document.querySelectorAll('.nav-btn');
             navBtns.forEach(btn => {
                 if(btn.dataset.target === pageId) {
@@ -1731,46 +1499,9 @@ if (sellForm) {
                 }
             });
 
-            // 4. Scroll to top ONLY if clicking a button (not on page refresh)
             if (!isInitialLoad) {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
-        }
-        // --- Detail Page Image Gallery Logic ---
-        const detailImages = [
-            "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1600566753086-00f18efc204b?auto=format&fit=crop&w=1200&q=80"
-        ];
-        
-        let currentDetailIndex = 0;
-
-        function changeDetailImage(action) {
-            // Determine the new image index
-            if (action === 'prev') {
-                currentDetailIndex = (currentDetailIndex - 1 + detailImages.length) % detailImages.length;
-            } else if (action === 'next') {
-                currentDetailIndex = (currentDetailIndex + 1) % detailImages.length;
-            } else if (typeof action === 'number') {
-                currentDetailIndex = action; // Direct thumbnail click
-            }
-
-            // 1. Update the main big image
-            document.getElementById('detail-main-img').src = detailImages[currentDetailIndex];
-
-            // 2. Update the thumbnail styles (highlight active, fade others)
-            const thumbs = document.querySelectorAll('.detail-thumb');
-            thumbs.forEach((thumb, index) => {
-                if (index === currentDetailIndex) {
-                    // Active thumbnail
-                    thumb.classList.add('border-brand-gold');
-                    thumb.classList.remove('border-transparent', 'opacity-50');
-                } else {
-                    // Inactive thumbnails
-                    thumb.classList.remove('border-brand-gold');
-                    thumb.classList.add('border-transparent', 'opacity-50');
-                }
-            });
         }
         
         // --- Property Filter Logic ---
@@ -1784,20 +1515,17 @@ if (sellForm) {
             const statusBtns = document.querySelectorAll('.filter-status-btn');
             const clearBtn = document.getElementById('clear-filters-btn');
             
-            // Note: Scoped strictly to '#view-explore' so it doesn't accidentally grab and hide items from the Rent view
             const cards = document.querySelectorAll('#view-explore .property-card'); 
             const resultCount = document.getElementById('explore-result-count');
 
-            // Default Filter State
             let currentFilters = {
-                budget: 400, // 400 Lacs = 4.0 Cr
+                budget: 400,
                 area: 10000,
                 location: 'All Locations',
                 type: null,
                 status: null
             };
 
-            // Helper: Format Budget Text
             const formatBudget = (val) => {
                 if (val >= 100) {
                     return `₹${(val / 100).toFixed(2)} Cr`;
@@ -1805,7 +1533,6 @@ if (sellForm) {
                 return `₹${val} Lacs`;
             };
 
-            // Event Listeners for Sliders & Dropdown
             budgetInput.addEventListener('input', (e) => {
                 currentFilters.budget = parseInt(e.target.value);
                 budgetLabel.textContent = `Budget: ₹0 - ${formatBudget(currentFilters.budget)}`;
@@ -1823,17 +1550,14 @@ if (sellForm) {
                 applyFilters();
             });
 
-            // Event Listeners for Buttons (Type & Status)
             const setupToggleButtons = (btns, filterKey) => {
                 btns.forEach(btn => {
                     btn.addEventListener('click', () => {
-                        // If clicking an already active button, deselect it
                         if (currentFilters[filterKey] === btn.dataset.value) {
                             currentFilters[filterKey] = null;
                             btn.classList.remove('border-brand-gold', 'text-brand-gold');
                             btn.classList.add('border-gray-200', 'text-gray-500', 'dark:border-gray-600', 'dark:text-gray-300');
                         } else {
-                            // Deselect all others, then select this one
                             btns.forEach(b => {
                                 b.classList.remove('border-brand-gold', 'text-brand-gold');
                                 b.classList.add('border-gray-200', 'text-gray-500', 'dark:border-gray-600', 'dark:text-gray-300');
@@ -1850,7 +1574,6 @@ if (sellForm) {
             setupToggleButtons(typeBtns, 'type');
             setupToggleButtons(statusBtns, 'status');
 
-            // Event Listener for Clear All Button
             clearBtn.addEventListener('click', () => {
                 currentFilters = { budget: 400, area: 10000, location: 'All Locations', type: null, status: null };
                 
@@ -1874,7 +1597,6 @@ if (sellForm) {
                 applyFilters();
             });
 
-            // Core Filtering Logic
             function applyFilters() {
                 let visibleCount = 0;
                 
@@ -1887,14 +1609,12 @@ if (sellForm) {
 
                     let show = true;
 
-                    // Check conditions
                     if (price > currentFilters.budget) show = false;
                     if (area > currentFilters.area) show = false;
                     if (currentFilters.location !== 'All Locations' && location !== currentFilters.location) show = false;
                     if (currentFilters.type && type !== currentFilters.type) show = false;
                     if (currentFilters.status && status !== currentFilters.status) show = false;
 
-                    // Toggle Visibility
                     if (show) {
                         card.style.display = 'flex';
                         visibleCount++;
@@ -1903,13 +1623,11 @@ if (sellForm) {
                     }
                 });
 
-                // Update Text
                 if(resultCount) {
                     resultCount.textContent = `${visibleCount} propert${visibleCount === 1 ? 'y' : 'ies'} found in Dehradun`;
                 }
             }
 
-            // Initialize display on load
             applyFilters();
         });
     </script>
